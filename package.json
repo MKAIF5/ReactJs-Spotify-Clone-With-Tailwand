@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cd dist && copy index.html 200.html",
+    "deploy": "surge ./dist --domain kaif-spotify-clone.surge.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },
